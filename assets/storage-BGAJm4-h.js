@@ -1,0 +1,1 @@
+import{S as a}from"./index-DeVxPQiw.js";const u="condohub";async function n(r,o,t=u){const{error:e}=await a().storage.from(t).upload(r,o,{upsert:!0});if(e)throw new Error(e.message);return r}function c(r,o=u){const{data:t}=a().storage.from(o).getPublicUrl(r);return t.publicUrl}export{c as g,n as u};
